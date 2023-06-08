@@ -1,0 +1,34 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ejercicio.pratico.pkg1.sc202.camerún;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author camer
+ */
+public class EjercicioPratico1SC202Camerún {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        String number = JOptionPane.showInputDialog("Digite la cantidad  de trabajadores");
+    int job = Integer.parseInt(number);
+    float suma1 = 0;
+
+    int total = 0;
+    for (int i = 0; i<job; i++){
+        String money = JOptionPane.showInputDialog("Digite el salrio del trabajador "+(i+1));
+        int plata = Integer.parseInt(money);
+        total +=(plata*0.0925)+(plata*0.0508);
+        
+        
+    }
+     suma1=total;
+     JOptionPane.showMessageDialog(null, "la suma de la caja es : "+suma1);
+    }
+    
+    }
